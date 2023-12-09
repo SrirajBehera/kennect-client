@@ -10,6 +10,7 @@ import { useDispatch } from "react-redux";
 import { logOut } from "../../features/auth/authSlice";
 import LogoutIcon from "@mui/icons-material/Logout";
 import SearchIcon from "@mui/icons-material/Search";
+import RefreshIcon from '@mui/icons-material/Refresh';
 
 const FeedScreen = () => {
   const [loading, setLoading] = useState(false);
@@ -163,6 +164,17 @@ const FeedScreen = () => {
               Post
             </LoadingButton>
           </div>
+          <h4 className={styles.logoutHeading}>Have a refresh here!</h4>
+          <LoadingButton
+            variant="contained"
+            endIcon={<RefreshIcon />}
+            loading={loading}
+            onClick={() => {
+              loadAllPosts();
+            }}
+          >
+            Refresh
+          </LoadingButton>
           <h4 className={styles.logoutHeading}>Wanna logout?</h4>
           <Button
             variant="contained"
