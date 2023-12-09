@@ -37,6 +37,6 @@ Back-end server
 
 ## Deployment
 
-Front-end: []()
+Front-end: [https://kennect-client.vercel.app/](https://kennect-client.vercel.app/)
 
-Backend: []()
+Back-end: [https://kind-blue-barracuda-hose.cyclic.app/](https://kind-blue-barracuda-hose.cyclic.app/)
